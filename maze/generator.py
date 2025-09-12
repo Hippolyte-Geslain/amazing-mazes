@@ -1,4 +1,6 @@
 import random
+import tracemalloc
+import time
 
 directions = [
     (0, 2),   
@@ -28,6 +30,10 @@ class Grid():
         self.visited = set()
 
     def create_grid(self):
+        tracemalloc.start()
+        start_time = time.perf_counter()
+        
+        
         self.grid = [[self.wall for _ in range(self.size)] for _ in range(self.size)]
         self.create_path_backtrack((1, 1))
         self.grid[0][1] = self.path
@@ -35,6 +41,13 @@ class Grid():
         with open(self.name, 'w') as f:
             for line in self.grid:
                 f.write("".join(line) + "\n")
+
+                
+        end_time = time.perf_counter()
+        current, peak = tracemalloc.get_traced_memory()
+        print(f"Time : {end_time - start_time:.4f} seconds")
+        print(f"Current memory : {current / 10**6:.2f} Mo")
+        print(f"Peak memory : {peak / 10**6:.2f} Mo")
 
     def create_path_backtrack(self, cell):
         x, y = cell
