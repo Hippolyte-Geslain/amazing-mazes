@@ -1,0 +1,4 @@
+timestamp,n,ascii_size,generator,gen_time_s,gen_peak_kb,maze_txt,maze_png,solver,solve_time_s,solve_peak_kb,solution_txt,solution_png
+2025-09-16T11:24:11,7,15x15,Backtracker,0.001185,9,run_maze_backtracker.txt,run_maze_backtracker.png,DFS,0.000448,14,run_solution_dfs.txt,run_solution_dfs.png
+2025-09-16T11:26:29,9,19x19,Kruskal,0.001123,31,DI_maze_kruskal.txt,DI_maze_kruskal.png,DFS,0.000649,29,DI_solution_dfs.txt,DI_solution_dfs.png
+2025-09-16T14:52:27,8,17x17,Kruskal,0.001677,26,im_maze_kruskal.txt,im_maze_kruskal.png,None,,,,
