@@ -1,5 +1,6 @@
 from typing import List, Tuple, Optional
 import heapq
+import os
 from .utils import (
     read_ascii, write_ascii, to_grid, to_lines,
     find_border_openings, pick_entrance_exit
@@ -78,10 +79,15 @@ def dfs_solve_ascii(lines_in: List[str]) -> List[str]:
     path = _reconstruct_path(parent, goal) if goal in parent else None
     return _mark(grid, start, goal, visited_order, path)
 
-def solve_file(input_path: str, output_path: str) -> None:
+def solve_file(input_path: str, output_path: str, images_dir: str = "images") -> None:
     lines = read_ascii(input_path)
     solved = dfs_solve_ascii(lines)
     write_ascii(solved, output_path)
+    # Save ASCII in images directory as well
+    os.makedirs(images_dir, exist_ok=True)
+    base_name = os.path.splitext(os.path.basename(output_path))[0]
+    ascii_image_path = os.path.join(images_dir, f"{base_name}.txt")
+    write_ascii(solved, ascii_image_path)
 
 # --------------------------
 # A* (Manhattan)
@@ -132,7 +138,12 @@ def astar_solve_ascii(lines_in: List[str]) -> List[str]:
     path = _reconstruct_path(parent, goal) if goal in parent else None
     return _mark(grid, start, goal, visited_order, path)
 
-def solve_file_astar(input_path: str, output_path: str) -> None:
+def solve_file_astar(input_path: str, output_path: str, images_dir: str = "images") -> None:
     lines = read_ascii(input_path)
     solved = astar_solve_ascii(lines)
     write_ascii(solved, output_path)
+    # Save ASCII in images directory as well
+    os.makedirs(images_dir, exist_ok=True)
+    base_name = os.path.splitext(os.path.basename(output_path))[0]
+    ascii_image_path = os.path.join(images_dir, f"{base_name}.txt")
+    write_ascii(solved, ascii_image_path)

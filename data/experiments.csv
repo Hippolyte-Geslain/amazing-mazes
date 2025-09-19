@@ -2,3 +2,8 @@ timestamp,n,ascii_size,generator,gen_time_s,gen_peak_kb,maze_txt,maze_png,solver
 2025-09-16T11:24:11,7,15x15,Backtracker,0.001185,9,run_maze_backtracker.txt,run_maze_backtracker.png,DFS,0.000448,14,run_solution_dfs.txt,run_solution_dfs.png
 2025-09-16T11:26:29,9,19x19,Kruskal,0.001123,31,DI_maze_kruskal.txt,DI_maze_kruskal.png,DFS,0.000649,29,DI_solution_dfs.txt,DI_solution_dfs.png
 2025-09-16T14:52:27,8,17x17,Kruskal,0.001677,26,im_maze_kruskal.txt,im_maze_kruskal.png,None,,,,
+2025-09-19T16:49:12,20,41x41,Backtracker,0.064591,75,testdemo_maze_backtracker.txt,testdemo_maze_backtracker.png,DFS,0.001971,60,testdemo_solution_dfs.txt,testdemo_solution_dfs.png
+2025-09-19T16:54:19,19,39x39,Backtracker,0.011177,74,testdemo1_maze_backtracker.txt,testdemo1_maze_backtracker.png,DFS,0.006852,73,testdemo1_solution_dfs.txt,testdemo1_solution_dfs.png
+2025-09-19T16:56:59,20,41x41,Backtracker,0.011801,76,testdemo2_maze_backtracker.txt,testdemo2_maze_backtracker.png,DFS,0.007480,164,testdemo2_solution_dfs.txt,testdemo2_solution_dfs.png
+2025-09-19T17:06:50,20,41x41,Backtracker,0.011949,75,testd_maze_backtracker.txt,testd_maze_backtracker.png,DFS,0.008565,171,testd_solution_dfs.txt,testd_solution_dfs.png
+2025-09-19T17:08:26,20,41x41,Backtracker,0.013778,75,nom_maze_backtracker.txt,nom_maze_backtracker.png,DFS,0.007768,165,nom_solution_dfs.txt,nom_solution_dfs.png

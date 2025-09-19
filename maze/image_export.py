@@ -1,8 +1,8 @@
 from typing import List, Tuple
 from PIL import Image
+import os
 
 # Couleurs : ajuste si tu veux
-# mur '#': noir, couloir '.': blanc, chemin 'o': vert, exploré '*': jaune
 COLOR_MAP = {
     '#': (0, 0, 0),
     '.': (255, 255, 255),
@@ -10,7 +10,7 @@ COLOR_MAP = {
     '*': (220, 200, 0),
 }
 
-def ascii_to_image(lines: List[str], out_path: str, cell: int = 8) -> None:
+def ascii_to_image(lines: List[str], out_path: str, cell: int = 8, images_dir: str = "images") -> None:
     if cell < 1:
         cell = 1
     H = len(lines)
@@ -29,6 +29,10 @@ def ascii_to_image(lines: List[str], out_path: str, cell: int = 8) -> None:
                 for dx in range(cell):
                     px[x0 + dx, y0 + dy] = color
 
+    # Ensure images directory exists
+    os.makedirs(images_dir, exist_ok=True)
+    # Compose full path
     if not out_path.lower().endswith(".png"):
         out_path += ".png"
-    img.save(out_path)
+    full_path = os.path.join(images_dir, out_path)
+    img.save(full_path)

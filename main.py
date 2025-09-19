@@ -105,6 +105,9 @@ def action_full_session():
     n = ask_int("Taille n (≥ 2) : ", min_val=2)
     base = slugify(input("Nom de base (sans extension, ex: run1) : ").strip() or "run")
 
+    images_dir = "images"
+    os.makedirs(images_dir, exist_ok=True)
+
     # Génération
     if gen_name == "Backtracker":
         lines, gen_dt, gen_kb = time_and_mem(generate_maze_recursive_backtracker, n)
@@ -113,6 +116,10 @@ def action_full_session():
 
     maze_txt = f"{base}_maze_{gen_tag}.txt"
     write_ascii(lines, maze_txt)
+    # Save ASCII in images directory as well
+    maze_txt_img = os.path.join(images_dir, maze_txt)
+    write_ascii(lines, maze_txt_img)
+
     maze_png = f"{base}_maze_{gen_tag}.png"
     ascii_to_image(lines, maze_png, cell=8)
 
@@ -129,6 +136,10 @@ def action_full_session():
     if sol_lines is not None:
         sol_txt = f"{base}_solution_{solver_tag}.txt"
         write_ascii(sol_lines, sol_txt)
+        # Save ASCII in images directory as well
+        sol_txt_img = os.path.join(images_dir, sol_txt)
+        write_ascii(sol_lines, sol_txt_img)
+
         sol_png = f"{base}_solution_{solver_tag}.png"
         ascii_to_image(sol_lines, sol_png, cell=8)
 
