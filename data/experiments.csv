@@ -13,3 +13,6 @@ timestamp,n,ascii_size,generator,gen_time_s,gen_peak_kb,maze_txt,maze_png,solver
 2025-09-22T10:20:39,2000,4001x4001,Backtracker,119.386621,599844,test2k_maze_backtracker.txt,test2k_maze_backtracker.png,A*,97.436935,799728,test2k_solution_astar.txt,test2k_solution_astar.png
 2025-09-22T10:33:10,1000,2001x2001,Kruskal,42.187829,492366,testKDFS1k_maze_kruskal.txt,testKDFS1k_maze_kruskal.png,DFS,7.810114,217773,testKDFS1k_solution_dfs.txt,testKDFS1k_solution_dfs.png
 2025-09-22T10:38:27,1000,2001x2001,Kruskal,70.311926,492366,testKA_1k_maze_kruskal.txt,testKA_1k_maze_kruskal.png,A*,81.896973,643528,testKA_1k_solution_astar.txt,testKA_1k_solution_astar.png
+2025-09-22T14:17:41,10,21x21,Backtracker,0.003772,21,testblaze_maze_backtracker.txt,testblaze_maze_backtracker.png,DFS,0.001078,46,testblaze_solution_dfs.txt,testblaze_solution_dfs.png
+2025-09-22T14:26:10,10,21x21,Backtracker,0.004531,17,testblazeee_maze_backtracker.txt,testblazeee_maze_backtracker.png,DFS,0.001276,37,testblazeee_solution_dfs.txt,testblazeee_solution_dfs.png
+2025-09-22T14:28:41,20,41x41,Backtracker,0.011490,75,ascii\testblazepls_maze_backtracker.txt,testblazepls_maze_backtracker.png,DFS,0.002730,123,testblazepls_solution_dfs.txt,testblazepls_solution_dfs.png

@@ -106,6 +106,9 @@ def action_full_session():
     base = slugify(input("Nom de base (sans extension, ex: run1) : ").strip() or "run")
 
     images_dir = "images"
+    ascii_dir = "ascii"
+    os.makedirs(ascii_dir, exist_ok=True)
+
     os.makedirs(images_dir, exist_ok=True)
 
     # Génération
@@ -115,6 +118,7 @@ def action_full_session():
         lines, gen_dt, gen_kb = time_and_mem(generate_maze_kruskal, n)
 
     maze_txt = f"{base}_maze_{gen_tag}.txt"
+    maze_txt = os.path.join(ascii_dir, maze_txt)
     write_ascii(lines, maze_txt)
     # Save ASCII in images directory as well
     maze_txt_img = os.path.join(images_dir, maze_txt)

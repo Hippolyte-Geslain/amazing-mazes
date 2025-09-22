@@ -38,7 +38,7 @@ def read_ascii(filepath: str) -> List[str]:
         raise ValueError("ASCII invalide : lignes de longueurs différentes.")
     return lines
 
-def write_ascii(lines: List[str], filepath: str) -> None:
+def write_ascii(lines: List[str], filepath="ascii") -> None:
     with open(filepath, "w", encoding="utf-8") as f:
         for line in lines:
             f.write(line + "\n")
