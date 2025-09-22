@@ -9,3 +9,7 @@ timestamp,n,ascii_size,generator,gen_time_s,gen_peak_kb,maze_txt,maze_png,solver
 2025-09-19T17:08:26,20,41x41,Backtracker,0.013778,75,nom_maze_backtracker.txt,nom_maze_backtracker.png,DFS,0.007768,165,nom_solution_dfs.txt,nom_solution_dfs.png
 2025-09-22T07:39:15,50,101x101,Kruskal,0.029621,1041,testA_1_maze_kruskal.txt,testA_1_maze_kruskal.png,A*,0.027292,1022,testA_1_solution_astar.txt,testA_1_solution_astar.png
 2025-09-22T07:41:33,1000,2001x2001,Kruskal,23.868622,492366,testA_2_maze_kruskal.txt,testA_2_maze_kruskal.png,A*,22.119827,596761,testA_2_solution_astar.txt,testA_2_solution_astar.png
+2025-09-22T10:08:18,1000,2001x2001,Backtracker,25.267780,146113,testA_3_maze_backtracker.txt,testA_3_maze_backtracker.png,A*,17.966672,346662,testA_3_solution_astar.txt,testA_3_solution_astar.png
+2025-09-22T10:20:39,2000,4001x4001,Backtracker,119.386621,599844,test2k_maze_backtracker.txt,test2k_maze_backtracker.png,A*,97.436935,799728,test2k_solution_astar.txt,test2k_solution_astar.png
+2025-09-22T10:33:10,1000,2001x2001,Kruskal,42.187829,492366,testKDFS1k_maze_kruskal.txt,testKDFS1k_maze_kruskal.png,DFS,7.810114,217773,testKDFS1k_solution_dfs.txt,testKDFS1k_solution_dfs.png
+2025-09-22T10:38:27,1000,2001x2001,Kruskal,70.311926,492366,testKA_1k_maze_kruskal.txt,testKA_1k_maze_kruskal.png,A*,81.896973,643528,testKA_1k_solution_astar.txt,testKA_1k_solution_astar.png
