@@ -7,3 +7,5 @@ timestamp,n,ascii_size,generator,gen_time_s,gen_peak_kb,maze_txt,maze_png,solver
 2025-09-19T16:56:59,20,41x41,Backtracker,0.011801,76,testdemo2_maze_backtracker.txt,testdemo2_maze_backtracker.png,DFS,0.007480,164,testdemo2_solution_dfs.txt,testdemo2_solution_dfs.png
 2025-09-19T17:06:50,20,41x41,Backtracker,0.011949,75,testd_maze_backtracker.txt,testd_maze_backtracker.png,DFS,0.008565,171,testd_solution_dfs.txt,testd_solution_dfs.png
 2025-09-19T17:08:26,20,41x41,Backtracker,0.013778,75,nom_maze_backtracker.txt,nom_maze_backtracker.png,DFS,0.007768,165,nom_solution_dfs.txt,nom_solution_dfs.png
+2025-09-22T07:39:15,50,101x101,Kruskal,0.029621,1041,testA_1_maze_kruskal.txt,testA_1_maze_kruskal.png,A*,0.027292,1022,testA_1_solution_astar.txt,testA_1_solution_astar.png
+2025-09-22T07:41:33,1000,2001x2001,Kruskal,23.868622,492366,testA_2_maze_kruskal.txt,testA_2_maze_kruskal.png,A*,22.119827,596761,testA_2_solution_astar.txt,testA_2_solution_astar.png
