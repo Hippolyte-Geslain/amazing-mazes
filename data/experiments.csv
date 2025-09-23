@@ -16,3 +16,11 @@ timestamp,n,ascii_size,generator,gen_time_s,gen_peak_kb,maze_txt,maze_png,solver
 2025-09-22T14:17:41,10,21x21,Backtracker,0.003772,21,testblaze_maze_backtracker.txt,testblaze_maze_backtracker.png,DFS,0.001078,46,testblaze_solution_dfs.txt,testblaze_solution_dfs.png
 2025-09-22T14:26:10,10,21x21,Backtracker,0.004531,17,testblazeee_maze_backtracker.txt,testblazeee_maze_backtracker.png,DFS,0.001276,37,testblazeee_solution_dfs.txt,testblazeee_solution_dfs.png
 2025-09-22T14:28:41,20,41x41,Backtracker,0.011490,75,ascii\testblazepls_maze_backtracker.txt,testblazepls_maze_backtracker.png,DFS,0.002730,123,testblazepls_solution_dfs.txt,testblazepls_solution_dfs.png
+2025-09-22T14:37:56,1000,2001x2001,Kruskal,58.153762,492459,ascii\testK1K_maze_kruskal.txt,testK1K_maze_kruskal.png,DFS,9.888792,234679,testK1K_solution_dfs.txt,testK1K_solution_dfs.png
+2025-09-22T14:48:28,2000,4001x4001,Backtracker,160.625612,599852,ascii\testB1K_maze_backtracker.txt,testB1K_maze_backtracker.png,DFS,35.842123,582537,testB1K_solution_dfs.txt,testB1K_solution_dfs.png
+2025-09-22T15:28:42,40,81x81,Backtracker,0.058398,291,ascii\Akram_maze_backtracker.txt,Akram_maze_backtracker.png,DFS,0.010172,212,Akram_solution_dfs.txt,Akram_solution_dfs.png
+2025-09-22T15:29:34,40,81x81,Kruskal,0.034048,592,ascii\AkramK_maze_kruskal.txt,AkramK_maze_kruskal.png,DFS,0.024200,472,AkramK_solution_dfs.txt,AkramK_solution_dfs.png
+2025-09-22T15:30:32,40,81x81,Backtracker,0.051184,220,ascii\Akram_maze_backtracker.txt,Akram_maze_backtracker.png,A*,0.076170,305,Akram_solution_astar.txt,Akram_solution_astar.png
+2025-09-22T15:31:17,40,81x81,Kruskal,0.056861,550,ascii\Akram_maze_kruskal.txt,Akram_maze_kruskal.png,A*,0.026438,632,Akram_solution_astar.txt,Akram_solution_astar.png
+2025-09-22T15:33:41,40,81x81,Backtracker,0.053657,221,ascii\LastTest_maze_backtracker.txt,LastTest_maze_backtracker.png,DFS,0.012563,216,LastTest_solution_dfs.txt,LastTest_solution_dfs.png
+2025-09-22T15:34:29,60,121x121,Backtracker,0.124787,358,ascii\VeryLastTest_maze_backtracker.txt,VeryLastTest_maze_backtracker.png,DFS,0.057348,820,VeryLastTest_solution_dfs.txt,VeryLastTest_solution_dfs.png
